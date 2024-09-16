@@ -20,13 +20,13 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "6006401812:AAEnW3gVaJsJ9MEAdAcwS3mzKIEJmRt
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS', 'https://graph.org/file/f6f67244ddff909a53b12.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://i.imgur.com/4SOqPpL.jpeg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/1f774a8adb603614fc385.mp4")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/3207ba97e1879873e54ac.jpg'))
 SUBSCRIPTIO = (environ.get('SUBSCRIPTION', 'https://graph.org/file/3207ba97e1879873e54ac.jpg')).split()
-CODE = (environ.get('CODE', 'https://graph.org/file/a68104693ac1f8e442110.png'))
-PAYPICS = (environ.get('PAYPICS', 'https://graph.org/file/a68104693ac1f8e442110.png')).split()
+CODE = (environ.get('CODE', 'https://envs.sh/wRt.jpg'))
+PAYPICS = (environ.get('PAYPICS', 'https://envs.sh/wRt.jpg')).split()
 REFER_PICS = (environ.get("REFER_PICS", "https://graph.org/file/1a2e64aee3d4d10edd930.jpg")).split() 
 
 #stream link shortner
@@ -45,7 +45,7 @@ auth_channel = environ.get('AUTH_CHANNEL', '') #Channel / Group Id for force sub
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002356223196') # support group id ( make sure bot is admin )
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001519604706') # support group id ( make sure bot is admin )
 reqst_channel = environ.get('REQST_CHANNEL_ID', '') # request channel id ( make sure bot is admin )
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
@@ -65,19 +65,19 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 # Others
 VERIFY = bool(environ.get('VERIFY', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shortyfi.link')
-SHORTLINK_API = environ.get('SHORTLINK_API', '3baaf60ddf2a9a331f79b9222142a05c412170c0')
+SHORTLINK_API = environ.get('SHORTLINK_API', '318cf2049f8a66e5de9b050bd5424b394eddac9e')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK',True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/showtimemovierequestgrouppp')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/showtimelatest')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/boamovie')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/hdmovies4b')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ: EVIL😇')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002358221198')) #Log channel id ( make sure bot is admin )
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/evil00000') #Support group link ( make sure bot is admin )
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Desaibhikhu') #Support group link ( make sure bot is admin )
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -115,9 +115,9 @@ URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
     "https://{}/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
-SESSION_NAME = str(environ.get('SESSION_NAME', 'JisshuBot'))
+SESSION_NAME = str(environ.get('SESSION_NAME', 'BoatrixBot'))
 MULTI_CLIENT = False
-name = str(environ.get('name', 'Jisshu'))
+name = str(environ.get('name', 'BoatrixBot'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
@@ -142,7 +142,7 @@ JS_WEB_PREMIUM = is_enabled((environ.get('JS_WEB_PREMIUM', "True")), True)
 JS_THEMES = "cerulean"
 
 # add premium logs channel id
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1001915988112'))
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002358221198'))
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
