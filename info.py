@@ -20,14 +20,14 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "6006401812:AAEnW3gVaJsJ9MEAdAcwS3mzKIEJmRt
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS', 'https://i.imgur.com/4SOqPpL.jpeg')).split() #SAMPLE PIC
-NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/1f774a8adb603614fc385.mp4")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/3207ba97e1879873e54ac.jpg'))
-SUBSCRIPTIO = (environ.get('SUBSCRIPTION', 'https://graph.org/file/3207ba97e1879873e54ac.jpg')).split()
-CODE = (environ.get('CODE', 'https://envs.sh/wRt.jpg'))
-PAYPICS = (environ.get('PAYPICS', 'https://envs.sh/wRt.jpg')).split()
-REFER_PICS = (environ.get("REFER_PICS", "https://graph.org/file/1a2e64aee3d4d10edd930.jpg")).split() 
+#PICS = (environ.get('PICS', 'https://i.imgur.com/4SOqPpL.jpeg')).split() #SAMPLE PIC
+#NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
+#MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/1f774a8adb603614fc385.mp4")
+#SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/3207ba97e1879873e54ac.jpg'))
+#SUBSCRIPTIO = (environ.get('SUBSCRIPTION', 'https://graph.org/file/3207ba97e1879873e54ac.jpg')).split()
+#CODE = (environ.get('CODE', 'https://envs.sh/wRt.jpg'))
+#PAYPICS = (environ.get('PAYPICS', 'https://envs.sh/wRt.jpg')).split()
+#REFER_PICS = (environ.get("REFER_PICS", "https://graph.org/file/1a2e64aee3d4d10edd930.jpg")).split() 
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', '')) # not support
@@ -65,7 +65,7 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 # Others
 VERIFY = bool(environ.get('VERIFY', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shortyfi.link')
-SHORTLINK_API = environ.get('SHORTLINK_API', '318cf2049f8a66e5de9b050bd5424b394eddac9e')
+SHORTLINK_API = environ.get('SHORTLINK_API', '3baaf60ddf2a9a331f79b9222142a05c412170c0')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK',True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
