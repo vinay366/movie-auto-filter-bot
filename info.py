@@ -70,7 +70,7 @@ IS_SHORTLINK = bool(environ.get('IS_SHORTLINK',True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-PORT = environ.get("PORT", "8080")
+PORT = environ.get("PORT", "8081")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/ccmtamil_request')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/CCMTAMIL')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_To_Get_Movie')
@@ -142,7 +142,7 @@ JS_WEB_PREMIUM = is_enabled((environ.get('JS_WEB_PREMIUM', "True")), True)
 JS_THEMES = "cerulean"
 
 # add premium logs channel id
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-100237772600'))
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002377726009'))
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
