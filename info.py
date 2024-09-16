@@ -27,7 +27,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 #SUBSCRIPTIO = (environ.get('SUBSCRIPTION', 'https://graph.org/file/3207ba97e1879873e54ac.jpg')).split()
 #CODE = (environ.get('CODE', 'https://envs.sh/wRt.jpg'))
 #PAYPICS = (environ.get('PAYPICS', 'https://envs.sh/wRt.jpg')).split()
-#REFER_PICS = (environ.get("REFER_PICS", "https://graph.org/file/1a2e64aee3d4d10edd930.jpg")).split() 
+REFER_PICS = (environ.get("REFER_PICS", "https://graph.org/file/1a2e64aee3d4d10edd930.jpg")).split() 
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', '')) # not support
