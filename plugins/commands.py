@@ -28,7 +28,7 @@ BATCH_FILES = {}
 EMOJIS = [ "👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡" ]
 
 
-movie_series_db = CCMDATA(DATABASE_URI)
+movie_series_db = Jisshu_TOP(DATABASE_URI)
 
 
 @Client.on_callback_query(filters.regex("mostsearch"))
