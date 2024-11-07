@@ -115,9 +115,9 @@ URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
     "https://{}/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
-SESSION_NAME = str(environ.get('SESSION_NAME', 'BoatrixBot'))
+SESSION_NAME = str(environ.get('SESSION_NAME', ''))
 MULTI_CLIENT = False
-name = str(environ.get('name', 'BoatrixBot'))
+name = str(environ.get('name', ''))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
@@ -133,10 +133,10 @@ else:
 
 
 # Online Stream and Download
-STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or Flase
+STREAM_MODE = bool(environ.get('STREAM_MODE', Flase)) # Set True or Flase
 
 # online Stream and Download support only premium user, True or Flase
-JS_WEB_PREMIUM = is_enabled((environ.get('JS_WEB_PREMIUM', "True")), True)
+JS_WEB_PREMIUM = is_enabled((environ.get('JS_WEB_PREMIUM', "Flase")), Flase)
 
 # website themes changing (https://bootswatch.com)
 JS_THEMES = "cerulean"
